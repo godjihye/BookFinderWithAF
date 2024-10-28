@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B8E3FD2E2CCF358C00F5F0F7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B8E3FD2D2CCF358C00F5F0F7 /* Kingfisher */; };
+		B8E3FD312CCF359C00F5F0F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8E3FD302CCF359C00F5F0F7 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B8E3FD0B2CCF31E800F5F0F7 /* BookFinderWithAF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFinderWithAF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E3FD2E2CCF358C00F5F0F7 /* Kingfisher in Frameworks */,
+				B8E3FD312CCF359C00F5F0F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = BookFinderWithAF;
 			packageProductDependencies = (
+				B8E3FD2D2CCF358C00F5F0F7 /* Kingfisher */,
+				B8E3FD302CCF359C00F5F0F7 /* Alamofire */,
 			);
 			productName = BookFinderWithAF;
 			productReference = B8E3FD0B2CCF31E800F5F0F7 /* BookFinderWithAF.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = B8E3FD022CCF31E800F5F0F7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B8E3FD2C2CCF358C00F5F0F7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B8E3FD2F2CCF359C00F5F0F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B8E3FD0C2CCF31E800F5F0F7 /* Products */;
 			projectDirPath = "";
@@ -194,6 +207,8 @@
 		};
 		B8E3FD212CCF31E800F5F0F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B8E3FD0D2CCF31E800F5F0F7 /* BookFinderWithAF */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -257,6 +272,8 @@
 		};
 		B8E3FD222CCF31E800F5F0F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B8E3FD0D2CCF31E800F5F0F7 /* BookFinderWithAF */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -333,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8E3FD2C2CCF358C00F5F0F7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+		B8E3FD2F2CCF359C00F5F0F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8E3FD2D2CCF358C00F5F0F7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E3FD2C2CCF358C00F5F0F7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B8E3FD302CCF359C00F5F0F7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8E3FD2F2CCF359C00F5F0F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8E3FD032CCF31E800F5F0F7 /* Project object */;
 }
